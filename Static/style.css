@@ -1,0 +1,198 @@
+body {
+
+    font-family: Oswald;
+	background-image: url("https://envato-shoebox-0.imgix.net/d33f/2202-a59f-41e6-ad45-cfc367dd8ab7/GS1A2578.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=541777fea5fc5894ccb94a641c49f566");
+	background-repeat: repeat-y;
+	background-size: 1400px 700px;
+	
+
+}
+
+
+
+h1 {
+
+    color: white;
+
+    margin-bottom: 0;
+
+    margin-top: 0;
+
+    text-align: center;
+
+    font-size: 40px;
+
+}
+
+
+
+h3 {
+
+    color: black;
+
+    font-size: 20px;
+
+    margin-top: 3px;
+
+    text-align: center;
+
+}
+
+
+
+#chatbox {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 40%;
+
+    margin-top: 120px;
+	
+	
+
+}
+
+
+
+#userInput {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 40%;
+
+    margin-top: 60px;
+
+}
+
+
+
+#textInput {
+
+    width: 89%;
+
+    border: 2px solid #eee;
+
+
+    border-bottom: 3px solid #515a5a;
+
+    font-family: monospace;
+
+	font-size: 20px;
+	border-radius: 10px;
+
+
+}
+
+
+
+#buttonInput {
+	background: #46cd0b   ;
+	color: white;
+        padding: 3px ;
+	
+	border-radius: 8px;
+	box-shadow: 0 3px 0 #145a32;
+	cursor: pointer;
+
+
+    
+
+    font-size: 17px;
+
+}
+
+
+
+.userText {
+
+    color: white;
+
+  
+
+    font-size: 20px;
+
+    text-align: right;
+
+    line-height: 30px;
+	
+
+}
+
+
+
+.userText span {
+
+    background-color: #138d75 ;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
+
+
+.botText {
+
+    color: white;
+
+    
+
+    font-size: 20px;
+
+    text-align: left;
+
+    line-height: 30px;
+
+}
+
+
+
+.botText span {
+
+    background-color: #e14d12;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
+
+
+#tidbit {
+
+    position:absolute;
+
+    bottom:0;
+
+    right:0;
+
+    width: 300px;
+
+}
+
+div.absolute{
+    position: absolute;
+	left: 420px;
+	top: 0;
+	
+ }
+
+.w3-container:after,.w3-container:before{content:"";display:table;clear:both}
+.w3-container{padding:0.01em 16px}
+
+.w3-top{position:fixed;width:100%;z-index:1}.w3-top{top:0;left:0}
+
+.w3-white{color:white ;background-color:#212f3d;box-shadow: 0 3px 0 #566573;font-size:30px;font-family: "Arial Black", Gadget, sans-serif}
+
+
+
+.w3-padding{padding:20px 530px}
+
+.w3-padding-16{padding-top:16px;padding-bottom:10px}
+.w3-left{float:left}

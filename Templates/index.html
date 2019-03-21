@@ -1,0 +1,87 @@
+<html>
+<html>
+
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="..\static\style.css" >
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  </head>
+<body>
+
+<header class="w3-container w3-top w3-white w3-padding-16">
+  <span class="w3-left w3-padding">MVSR ChatBot</span>
+
+
+<div class="absolute">                                             
+     <img src="https://image3.mouthshut.com/images/imagesp/925716474s.png" alt="logo" width="100px" height="100px" />
+</div>
+
+</header>
+<div id="chatbox">
+
+        <p class="botText"><span>Welcome to MVSR</span></p>
+
+      </div>
+
+      <div id="userInput">
+
+        <input id="textInput" type="text" name="msg" placeholder="Message">
+
+        <input id="buttonInput" type="submit" value="Send">
+
+      </div>
+	
+
+      <script>
+
+        function getBotResponse() {
+
+          var rawText = $("#textInput").val();
+
+          var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+
+          $("#textInput").val("");
+
+          $("#chatbox").append(userHtml);
+
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+
+          $.get("/get", { msg: rawText }).done(function(data) {
+
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+
+            $("#chatbox").append(botHtml);
+
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+
+          });
+
+        }
+
+        $("#textInput").keypress(function(e) {
+
+            if(e.which == 13) {
+
+                getBotResponse();
+
+            }
+
+        });
+
+        $("#buttonInput").click(function() {
+
+          getBotResponse();
+
+        })
+
+      </script>
+
+    </div>
+
+
+</body>
+</html>
